@@ -1,0 +1,12 @@
+version: '3'
+services:
+  cytoscape:
+    image: node:latest
+    tty: true
+    volumes:
+      - .:/app
+    ports:
+      - 7080:80
+      - 7081:81
+      - 7082:82
+      - 7083:83
